@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: color 10s linear infinite;
 }
+
 body{
     width: 100%;
     height: 100vh;
@@ -11,6 +13,7 @@ body{
     gap: 10px;
     overflow: hidden;
 }
+
 div{
     display: flex;
     flex-direction: row;
@@ -18,6 +21,7 @@ div{
     flex-wrap: wrap;
     padding: 10px;
 }
+
 div span {
     display: flex;
     width: 50px;
@@ -32,9 +36,7 @@ div span:hover{
     box-shadow: 0 0 50px aqua;
     opacity: 1;
 }
-:root{
-    animation: color 10s linear infinite;
-}
+
 @keyframes color {
     from{
         filter: hue-rotate(0deg);
